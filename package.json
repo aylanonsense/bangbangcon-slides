@@ -1,0 +1,13 @@
+{
+  "name": "bangbangcon-slides",
+  "version": "0.0.1",
+  "description": "Slides for !!con.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bridgs/bangbangcon-slides.git"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
