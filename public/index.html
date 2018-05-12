@@ -57,11 +57,16 @@
 			}
 			.reveal .slides pre code .bubble {
 				color: #2d2a2e;
-				background-color: #ab9df2;
+				background-color: #fc9867;
 				padding: 0 3px 0 3px;
 				margin: 0 3px 0 3px;
 				border-radius: 3px;
 				/*display: inline-block;*/
+			}
+			.columns {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
 			}
 		</style>
 	</head>
@@ -75,24 +80,73 @@
 					<p style="margin-top:0;">By Ayla Myers</p>
 				</section>
 				<section>
-					<img class="pixels" src="img/8-legs-to-love.gif" width="300" height="300" />
-					<img class="pixels" src="img/just-one-boss.gif" width="300" height="300" />
-					<img class="pixels" src="img/juggle-panic.gif" width="300" height="300" />
-					<img class="pixels" src="img/agab.gif" width="300" height="300" />
-					<img class="pixels" src="img/racquet-panic.gif" width="300" height="300" />
-					<img class="pixels" src="img/snowboarding.gif" width="300" height="300" />
-					<!-- <img class="pixels" style="margin-bottom:0;" src="img/west-showcase.gif" width="256" height="256" /> -->
+					<img class="pixels" src="img/8-legs-to-love.gif" width="310" height="310" />
+					<img class="pixels" src="img/just-one-boss.gif" width="310" height="310" />
+					<img class="pixels" src="img/juggle-panic.gif" width="310" height="310" />
+					<img class="pixels" src="img/agab.gif" width="310" height="310" />
+					<img class="pixels" src="img/west-showcase.gif" width="310" height="310" />
+					<img class="pixels" src="img/snowboarding.gif" width="310" height="310" />
 				</section>
 				<section>
-					<p>What is PICO-8</p>
+					<div class="columns">
+						<div>
+							<h2 style="font-size:2em;">PICO-8</h2>
+							<img class="pixels" src="img/pico-8-logo.png" width="150" height="150" />
+						</div>
+						<img class="pixels" src="img/pico-8-launch.gif" width="512" height="512" />
+					</div>
 				</section>
 				<section>
-					<img class="pixels" style="margin-bottom:0;" src="img/code-editor.gif" width="300" height="300" />
-					<img class="pixels fragment" style="margin-bottom:0;" src="img/sprite-editor.gif" width="300" height="300" />
-					<img class="pixels fragment" style="margin-bottom:0;" src="img/chiptune-editor.gif" width="300" height="300" />
+					<div class="columns">
+						<div>
+							<h2 style="font-size:2em;">PICO-8</h2>
+							<img class="pixels" src="img/pico-8-logo.png" width="150" height="150" />
+						</div>
+						<img class="pixels" src="img/racquet-panic.gif" width="512" height="512" />
+					</div>
 				</section>
 				<section>
-					<p>[Limitations] with 8192 highlight and text/byte highlight</p>
+					<img class="pixels" style="margin-bottom:0;" src="img/code-editor.gif" width="310" height="310" />
+					<img class="pixels fragment" style="margin-bottom:0;" src="img/sprite-editor.gif" width="310" height="310" />
+					<img class="pixels fragment" style="margin-bottom:0;" src="img/chiptune-editor.gif" width="310" height="310" />
+				</section>
+				<section>
+					<ul style="list-style-type:none;margin:0;width:100%;height:500px;">
+						<li class="fragment white" style="position:absolute;top:33%;left:20%;font-size:1.9em;">128x128 resolution</li>
+						<li class="fragment red" style="position:absolute;top:46%;left:8%;font-size:1.4em;">16 pre-selected colors</li>
+						<li class="fragment orange" style="position:absolute;top:48%;left:67%;">8192 tokens</li>
+						<li class="fragment purple" style="position:absolute;top:19%;left:32%;">64 sound effects</li>
+						<li class="fragment green" style="position:absolute;top:58%;left:20%;">128x128 spritesheet</li>
+						<li class="fragment blue" style="position:absolute;top:25%;right:10%;">Lua-like syntax</li>
+						<li class="fragment yellow" style="position:absolute;top:68%;left:40%;font-size:1.4em;">32 kilobytes memory</li>
+						<li class="fragment white" style="position:absolute;top:67%;left:15%;font-size:0.7em;">D-pad + 2 buttons</li>
+						<li class="fragment green" style="position:absolute;top:80%;left:65%;font-size:0.7em;">8 waveforms</li>
+						<li class="fragment purple" style="position:absolute;top:80%;left:30%;">64 music patterns</li>
+						<li class="fragment yellow" style="position:absolute;top:12%;left:40%;">4 sound channels</li>
+						<li class="fragment blue" style="position:absolute;top:73%;left:12%;font-size:0.7em;">65,535 characters</li>
+						<li class="fragment red" style="position:absolute;top:63%;left:64%;font-size:0.7em;">15,360 bytes of code</li>
+						<li class="fragment white" style="position:absolute;top:56%;left:59%;font-size:0.7em;">128x32 tile map</li>
+						<li class="fragment orange" style="position:absolute;top:27%;left:23%;font-size:0.7em;">256 bytes persistent memory</li>
+					</ul>
+				</section>
+				<section>
+					<ul style="list-style-type:none;margin:0;width:100%;height:500px;">
+						<li class="grey" style="position:absolute;top:33%;left:20%;font-size:1.9em;">128x128 resolution</li>
+						<li class="grey" style="position:absolute;top:46%;left:8%;font-size:1.4em;">16 pre-selected colors</li>
+						<li class="orange" style="position:absolute;top:48%;left:67%;">8192 tokens</li>
+						<li class="grey" style="position:absolute;top:19%;left:32%;">64 sound effects</li>
+						<li class="grey" style="position:absolute;top:58%;left:20%;">128x128 spritesheet</li>
+						<li class="grey" style="position:absolute;top:25%;right:10%;">Lua-like syntax</li>
+						<li class="grey" style="position:absolute;top:68%;left:40%;font-size:1.4em;">32 kilobytes memory</li>
+						<li class="grey" style="position:absolute;top:67%;left:15%;font-size:0.7em;">D-pad + 2 buttons</li>
+						<li class="grey" style="position:absolute;top:80%;left:65%;font-size:0.7em;">8 waveforms</li>
+						<li class="grey" style="position:absolute;top:80%;left:30%;">64 music patterns</li>
+						<li class="grey" style="position:absolute;top:12%;left:40%;">4 sound channels</li>
+						<li class="grey" style="position:absolute;top:73%;left:12%;font-size:0.7em;">65,535 characters</li>
+						<li class="grey" style="position:absolute;top:63%;left:64%;font-size:0.7em;">15,360 bytes of code</li>
+						<li class="grey" style="position:absolute;top:56%;left:59%;font-size:0.7em;">128x32 tile map</li>
+						<li class="grey" style="position:absolute;top:27%;left:23%;font-size:0.7em;">256 bytes persistent memory</li>
+					</ul>
 				</section>
 				<section>
 					<pre><code>
@@ -133,22 +187,71 @@
 					<p style="margin-top:0;"><code>43 tokens</code></p>
 				</section>
 				<section>
-					<p>[Sprite example]</p>
-					<pre><code>
+					<img class="pixels" src="img/cat-sheet-1.png" width="540" height="540" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-1.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code class="fragment">
 <span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
-sspr(<span class="yellow">40</span>, <span class="yellow">50</span>, <span class="yellow">1</span>, <span class="yellow">4</span>, <span class="purple">10</span>, <span class="purple">20</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-1.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-2.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-1.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-2.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-2.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-2.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-3.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-1.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-4.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/sound-effect-1.png" width="582" height="510" />
+				</section>
+				<section>
+					<img class="pixels" src="img/sound-effect-2.png" width="291" height="255" />
+					<pre><code>
+<span class="grey">-- sfx(index)</span>
+sfx(<span class="yellow">27</span>)
+</code></pre>
+					<pre style="visibility:hidden;"><code>
+<span class="grey">-- sfx(index, channel, start note, end note)</span>
+sspr(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
 </code></pre>
 				</section>
 				<section>
-					<p>[Sound effect example]</p>
+					<img class="pixels" src="img/sound-effect-3.png" width="291" height="255" />
 					<pre><code>
 <span class="grey">-- sfx(index)</span>
-sfx(<span class="yellow">6</span>)
+sfx(<span class="yellow">27</span>)
 </code></pre>
-
 					<pre><code>
 <span class="grey">-- sfx(index, channel, start note, end note)</span>
-sspr(<span class="yellow">6</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">9</span>)
+sspr(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
 </code></pre>
 				</section>
 				<section>[The big restrictions]</section>
