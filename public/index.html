@@ -87,14 +87,6 @@
 					<img class="pixels" src="img/west-showcase.gif" width="310" height="310" />
 					<img class="pixels" src="img/snowboarding.gif" width="310" height="310" />
 				</section>
-				<section>
-					<div class="columns">
-						<div>
-							<h2 style="font-size:2em;">PICO-8</h2>
-							<img class="pixels" src="img/pico-8-logo.png" width="150" height="150" />
-						</div>
-						<img class="pixels" src="img/pico-8-launch.gif" width="512" height="512" />
-					</div>
 				</section>
 				<section>
 					<div class="columns">
@@ -112,7 +104,7 @@
 				</section>
 				<section>
 					<ul style="list-style-type:none;margin:0;width:100%;height:500px;">
-						<li class="fragment white" style="position:absolute;top:33%;left:20%;font-size:1.9em;">128x128 resolution</li>
+						<li class="white" style="position:absolute;top:33%;left:20%;font-size:1.9em;">128x128 resolution</li>
 						<li class="fragment red" style="position:absolute;top:46%;left:8%;font-size:1.4em;">16 pre-selected colors</li>
 						<li class="fragment orange" style="position:absolute;top:48%;left:67%;">8192 tokens</li>
 						<li class="fragment purple" style="position:absolute;top:19%;left:32%;">64 sound effects</li>
@@ -256,7 +248,7 @@ sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="
 				</section>
 				<section>
 					<ul style="font-size:2em;list-style-type:none;margin:0;text-align:center;">
-						<li class="fragment orange" style="line-height:1.5;">8192 tokens</li>
+						<li class="orange" style="line-height:1.5;">8192 tokens</li>
 						<li class="fragment green" style="line-height:1.5;">128x128 sprite sheet</li>
 						<li class="fragment purple" style="line-height:1.5;">64 sound effects</li>
 					</ul>
@@ -266,6 +258,9 @@ sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="
 				</section>
 				<section>
 					<img class="pixels" src="img/sprite-sheet-1.png" width="512" height="512" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-2.png" width="512" height="512" />
 				</section>
 				<section>
 					<img class="pixels" src="img/cat-sheet-2.png" width="270" height="270" />
@@ -317,31 +312,31 @@ sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class=
 					<pre style="margin-top:0;margin-bottom:10px;"><code>
 sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
 </code></pre>
-					<p class="orange fragment" style="margin-top:0;margin-bottom:50px;"><code>8 tokens</code></p>
+					<p class="orange" style="margin-top:0;margin-bottom:50px;"><code>8 tokens</code></p>
 					<pre><code>
 sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
 sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>)
 </code></pre>
-					<p class="orange fragment" style="margin-top:0;"><code>19 tokens</code></p>
-					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8200</strong> / 8192 tokens</code></p>
+					<p class="orange" style="margin-top:0;"><code>19 tokens</code></p>
+					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8194</strong> / 8192 tokens</code></p>
 				</section>
-				<section>
+				<!-- <section>
 					<pre><code>
-<span class="green">if</span> game_is_finished <span class="green">then</span>
-	cat:dance()
+<span class="green">if</span> new_high_score <span class="green">then</span>
+	giraffe:dance()
 <span class="green">end</span>
 </code></pre>
 					<p class="orange" style="margin-top:0;margin-bottom:50px;"><code>6 tokens</code></p>
 					<div class="fragment">
 						<pre><code>
-<span class="grey">-- if game_is_finished then</span>
-	<span class="grey">-- cat:dance()</span>
+<span class="grey">-- if new_high_score then</span>
+	<span class="grey">-- giraffe:dance()</span>
 <span class="grey">-- end</span>
 </code></pre>
 						<p class="orange" style="margin-top:0;"><code>0 tokens</code></p>
 					</div>
 					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8194</strong> / 8192 tokens</code></p>
-				</section>
+				</section> -->
 				<section>
 					<pre><code>
 <span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
@@ -404,13 +399,13 @@ sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class=
 						<img class="pixels" src="img/cat-2.png" width="244" height="240" />
 						<img class="pixels" src="img/cat-1.png" width="244" height="240" />
 					</div>
-					<div class="fragment">
+					<!-- <div class="fragment">
 						<pre style="margin-top:10px;margin-bottom:20px;width:50%;"><code>
-<span class="grey">-- if game_is_finished then</span>
-	<span class="grey">-- cat:dance()</span>
+<span class="grey">-- if new_high_score then</span>
+	<span class="grey">-- giraffe:dance()</span>
 <span class="grey">-- end</span>
 </code></pre>
-					</div>
+					</div> -->
 					<div class="fragment">
 						<img class="pixels" src="img/sound-effect-6.png" width="291" height="255" />
 					</div>
@@ -423,6 +418,7 @@ sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class=
 				<section>[2D cusp]</section>
 				<section>[3D cusp]</section>
 				<section>[4D cusp]</section>
+				<section>[Thanks]</section>
 			</div>
 		</div>
 		<!-- <script src="lib/js/head.min.js"></script> -->
