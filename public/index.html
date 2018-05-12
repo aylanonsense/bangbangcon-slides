@@ -235,33 +235,186 @@ sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class=
 				<section>
 					<img class="pixels" src="img/sound-effect-2.png" width="291" height="255" />
 					<pre><code>
-<span class="grey">-- sfx(index)</span>
-sfx(<span class="yellow">27</span>)
+<span class="grey">-- sfx(index, channel)</span>
+sfx(<span class="yellow">27</span>, <span class="purple">1</span>)
 </code></pre>
 					<pre style="visibility:hidden;"><code>
 <span class="grey">-- sfx(index, channel, start note, end note)</span>
-sspr(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
 </code></pre>
 				</section>
 				<section>
 					<img class="pixels" src="img/sound-effect-3.png" width="291" height="255" />
 					<pre><code>
-<span class="grey">-- sfx(index)</span>
-sfx(<span class="yellow">27</span>)
+<span class="grey">-- sfx(index, channel)</span>
+sfx(<span class="yellow">27</span>, <span class="purple">1</span>)
 </code></pre>
 					<pre><code>
 <span class="grey">-- sfx(index, channel, start note, end note)</span>
-sspr(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
 </code></pre>
 				</section>
-				<section>[The big restrictions]</section>
-				<section>[Cray Example: New sprite]</section>
-				<section>[Cray Example: Spritesheet]</section>
-				<section>[Cray Example: Mirror code]</section>
-				<section>[Cray Example: Mirror spritesheet]</section>
-				<section>[Cray Example: Removed code]</section>
-				<section>[Cray Example: Altered sound effect]</section>
-				<section>[Cray Example: Summary of changes]</section>
+				<section>
+					<ul style="font-size:2em;list-style-type:none;margin:0;text-align:center;">
+						<li class="fragment orange" style="line-height:1.5;">8192 tokens</li>
+						<li class="fragment green" style="line-height:1.5;">128x128 sprite sheet</li>
+						<li class="fragment purple" style="line-height:1.5;">64 sound effects</li>
+					</ul>
+				</section>
+				<section>
+					<img class="pixels" src="img/snek.png" width="336" height="462" />
+				</section>
+				<section>
+					<img class="pixels" src="img/sprite-sheet-1.png" width="512" height="512" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-2.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="grey">-- sspr(x, y, width, height, pos_x, pos_y)</span>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<img class="pixels" src="img/cat-screen-3.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-3.png" width="270" height="270" />
+					<pre class="fragment" style="margin-top:0;margin-bottom:10px;"><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>) <span class="grey">-- flipped!</span>
+</code></pre>
+					<img class="pixels" src="img/cat-screen-1.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-3.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>) <span class="grey">-- flipped!</span>
+</code></pre>
+					<img class="pixels" src="img/cat-screen-5.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-4.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>) <span class="grey">-- flipped!</span>
+</code></pre>
+					<img class="pixels" src="img/cat-screen-6.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/cat-sheet-5.png" width="270" height="270" />
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>) <span class="grey">-- flipped!</span>
+</code></pre>
+					<img class="pixels" src="img/cat-screen-7.png" width="270" height="270" />
+				</section>
+				<section>
+					<img class="pixels" src="img/sprite-sheet-2.png" width="512" height="512" />
+				</section>
+				<section>
+					<img class="pixels" src="img/sprite-sheet-3.png" width="512" height="512" />
+				</section>
+				<section>
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">57</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+</code></pre>
+					<p class="orange fragment" style="margin-top:0;margin-bottom:50px;"><code>8 tokens</code></p>
+					<pre><code>
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">17</span>, <span class="purple">32</span>)
+sspr(<span class="yellow">24</span>, <span class="yellow">1</span>, <span class="yellow">29</span>, <span class="yellow">55</span>, <span class="purple">45</span>, <span class="purple">32</span>, <span class="purple">1</span>, <span class="purple">1</span>, <span class="purple">true</span>)
+</code></pre>
+					<p class="orange fragment" style="margin-top:0;"><code>19 tokens</code></p>
+					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8200</strong> / 8192 tokens</code></p>
+				</section>
+				<section>
+					<pre><code>
+<span class="green">if</span> game_is_finished <span class="green">then</span>
+	cat:dance()
+<span class="green">end</span>
+</code></pre>
+					<p class="orange" style="margin-top:0;margin-bottom:50px;"><code>6 tokens</code></p>
+					<div class="fragment">
+						<pre><code>
+<span class="grey">-- if game_is_finished then</span>
+	<span class="grey">-- cat:dance()</span>
+<span class="grey">-- end</span>
+</code></pre>
+						<p class="orange" style="margin-top:0;"><code>0 tokens</code></p>
+					</div>
+					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8194</strong> / 8192 tokens</code></p>
+				</section>
+				<section>
+					<pre><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	<span class="grey">-- play the meow sound</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+<span class="green">end</span>
+</code></pre>
+					<p class="orange" style="margin-top:0;"><code>9 tokens</code></p>
+				</section>
+				<section>
+					<img class="pixels" src="img/sound-effect-3.png" width="388" height="340" />
+					<pre><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	<span class="grey">-- play the meow sound</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+<span class="green">end</span>
+</code></pre>
+				</section>
+				<section>
+					<img class="pixels" src="img/sound-effect-4.png" width="388" height="340" />
+					<pre><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	<span class="grey">-- play the meow sound</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+<span class="green">end</span>
+</code></pre>
+				</section>
+				<section>
+					<img class="pixels" src="img/sound-effect-5.png" width="388" height="340" />
+					<pre><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	<span class="grey">-- play the meow sound</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>)
+<span class="green">end</span>
+</code></pre>
+				</section>
+				<section>
+					<pre style="margin-top:0;margin-bottom:10px;"><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>, <span class="purple">4</span>, <span class="purple">7</span>)
+<span class="green">end</span>
+</code></pre>
+					<p class="orange" style="margin-top:0;margin-bottom:50px;"><code>9 tokens</code></p>
+					<pre><code>
+<span class="green">function</span> <span class="blue">meow</span><span class="grey">()</span>
+	sfx(<span class="yellow">27</span>, <span class="purple">1</span>)
+<span class="green">end</span>
+</code></pre>
+					<p class="orange" style="margin-top:0;"><code>7 tokens</code></p>
+					<p class="red fragment" style="margin-top:50px;font-size:1.3em;"><code><strong>8192</strong> / 8192 tokens</code></p>
+				</section>
+				<section>
+					<div class="columns" style="justify-content:center;">
+						<img class="pixels" src="img/snek.png" width="336" height="462" />
+						<p style="font-size:4em;margin-left:10px;">?</p>
+					</div>
+				</section>
+				<section>
+					<div class="fragment">
+						<img class="pixels" src="img/cat-2.png" width="244" height="240" />
+						<img class="pixels" src="img/cat-1.png" width="244" height="240" />
+					</div>
+					<div class="fragment">
+						<pre style="margin-top:10px;margin-bottom:20px;width:50%;"><code>
+<span class="grey">-- if game_is_finished then</span>
+	<span class="grey">-- cat:dance()</span>
+<span class="grey">-- end</span>
+</code></pre>
+					</div>
+					<div class="fragment">
+						<img class="pixels" src="img/sound-effect-6.png" width="291" height="255" />
+					</div>
+				</section>
 				<section>[Tokens as currency]</section>
 				<section>[Token menu]</section>
 				<section>[Graph tokens vs sprites]</section>
